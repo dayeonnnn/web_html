@@ -9,6 +9,7 @@ h1~h6 p strong em sub sup s del code blockquote q address hr
 ```
 
 # 23/06/21~23/06/22 Layout Tag
+**HTML5 semantic Tag는 각 레이아웃 영역에 의미에 맞게 사용해야 한다.**
 ```
 div, span
 header, nav, footer, main, section, article, aside,
