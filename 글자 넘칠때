@@ -1,0 +1,3 @@
+    white-space:nowrap;
+    overflow: hidden; /* 넘친부분은 가리기 */
+    text-overflow:ellipsis; /* 넘친부분을 ...으로 처리 */
