@@ -1,0 +1,60 @@
+/* 로컬글꼴 연결법 */
+/* 웹글꼴 연결법 */
+/* 구글폰트접속 -> 글꼴선택 -> link or import 글꼴주소 가져오기 -> font-family글꼴연결 */
+dl {
+    font-size:2rem;
+    font-size:3rem;
+}
+dl dt {
+    background-color:rgba(0,255,255,0.7);
+    font-size:1.5rem;
+    color:rgba(0,0,0,0.5);
+}
+dl dt em {
+    display:none;
+    background-color: #000; color:#fff;
+    font-family: 'Diphylleia', serif;
+}
+dl dd {
+    background-color: yellowgreen;
+}
+dl dd span {
+    background-color: #000; color:#fff;
+    font-family: 'Gasoek One', sans-serif;
+}
+.f12 {
+    display:inline;
+    background-color:aqua;
+    word-spacing:0.05em;
+    letter-spacing:-0.02em;
+    font-size:1.25rem;
+    line-height:1.5;/* 1.0==100% (상대값) */
+    /* font-size의 px값 기준 설정이 불편할 경우
+    상대값 기준으로 line-height을 처리한다. (100%기준) -> figma를 무시하게 됨 */
+    /* line-height:30px (절대값) */
+    /* line-height를 px로 작성할 경우는
+    font-size의 px값 기준으로 값이 결정된다. */
+}
+.overflow {
+    background-color:rgba(0,0,0,0.2);
+    font-size:1.25rem;
+    width:400px;
+    white-space:nowrap;
+    overflow: hidden; /* 넘친부분은 가리기 */
+    text-overflow:ellipsis; /* 넘친부분을 ...으로 처리 */
+}
+#a {
+    background-color:darkblue;
+    width:500px; height:500px;
+    padding-left:50px;
+    padding-top:20px
+}
+#a #b {
+    margin:0px 10px 0;
+    border:5px solid coral;
+    font-size:5rem;
+    background-color:yellow;
+    width:50%; height:300px;
+    /* 자식요소의 크기를 입력 시에는 반드시 부모 요소보다 작거나 같아야 한다. */
+    /* px이나 % 작성가능 - 자식에겐 %가 더 좋다.->부모의 크기가 바뀌면 자동으로 변경*/
+}
