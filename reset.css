@@ -9,9 +9,9 @@ table,thead,tbody,tfoot,tr,th,td,ul,ol,li,dl,dt,dd, /*묶어주는 태그*/
 form,fieldset,legend,input,select,option,button,label,textarea {
     margin:0; padding:0; line-height:1.0;
     font-size:16px; font-style:normal; font-weight:normal;
-    text-align:left; text-decoration:none;
+    text-decoration:none;
 }
-
+th {text-ailgn:left;}
 table,tr,th,td {border-collase:collase;}
 ul,ol,li {list-style:none;} /*목록 태그*/
 a {color:#000;} 
