@@ -1,0 +1,107 @@
+/* header */
+header {
+    background-color: #f1f1f1;
+    width:1200px; height:92px;
+    margin:0 auto;
+}
+header h1 {
+    background-color: antiquewhite;
+    width:60px; height:70px;
+    margin:11px 0 0 20px;
+    float:left;
+}
+header h1 a {}
+header h1 img {width:100%}
+header nav {
+    background-color: rgb(248, 203, 144);
+    margin:39px 0 0 234px;
+    float:left;
+}
+header nav ul {}
+header nav ul li {
+    float:left;
+}
+header nav ul li a {
+    padding-right:40px;
+    font-size:1.2rem;
+}
+header nav ul li:last-child a {padding-right:0}
+header nav ul .active a {color:#36b4e5}
+header .lnb {
+    background-color: rgb(255, 170, 59);
+    float:right;
+    margin:39px 20px 0 0;
+}
+header .lnb li {
+    float:left;
+    margin-right:20px;
+}
+header .lnb li:last-child {margin-right:0;}
+header .lnb li a {
+    font-size:1.2rem;
+}
+header .lnb li span {
+    width:1px; height: 13px;
+    background-color:#aaa;
+    display:block;
+    margin:3px;
+}
+/* main */
+main {}
+main .breadcrumbs_bg {
+    background-color: rgb(187, 240, 43);
+}
+main .breadcrumbs_bg .breadcrumbs {
+    background-color: bisque;
+}
+main .breadcrumbs_bg .breadcrumbs a {}
+main .breadcrumbs_bg .breadcrumbs span {}
+main .contents1 {
+    background-color: rgb(147, 255, 255);
+}
+main .contents1 h1 {
+}
+main .contents1 p {
+}
+main .c2_bg {}
+main .c2_bg .contents2 {
+    background-color: #f1f1f1;
+}
+main .c2_bg .contents2 p {
+}
+main .contents3 {
+    background-color: rgb(0, 207, 207);
+}
+main .contents3 h2 {
+    color:#36b4e5;
+}
+main .contents3 p {
+}
+main .c4_bg {
+    background-color:#f1f1f1;
+}
+main .c4_bg .contents4 {}
+main .c4_bg .contents4 h2 {
+}
+main .c4_bg .contents4 ul {}
+main .c4_bg .contents4 ul li {}
+main .c4_bg .contents4 ul li h3 {}
+main .c4_bg .contents4 ul li p {}
+/* footer */
+footer {}
+footer .f_top {}
+footer .f_top .fnb {
+    background-color: rgb(245, 142, 47);
+}
+footer .f_top .fnb li {}
+footer .f_top .fnb li a {}
+footer .f_top .site {
+    background-color:rgb(253, 97, 136);
+}
+footer .f_top .site li {}
+footer .f_top .site li a {}
+footer .f_btm {
+    background-color: blueviolet;
+}
+footer .f_btm address {}
+footer .f_btm p {}

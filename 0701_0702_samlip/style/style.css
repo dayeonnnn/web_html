@@ -1,0 +1,220 @@
+/* header */
+header {
+    background-color: #ffbebe;
+    width:1200px; height:92px;
+    margin:0 auto;
+}
+header h1 {
+    width:60px; height:70px; /* img 부모 px */
+    float:left;
+    margin:11px 0 0 20px;
+}
+header h1 a {
+}
+header h1 img {
+    width:100%;
+    /* img 태그는 인라인 요소지만 px 크기를 절대값으로 가진다. 
+    그러므로 부모 요소의 크기가 변경되어도 자동으로 따라오지 않기 때문에 
+    width:100% 속성으로 상대값으로 변경하여 
+    부모의 px을 상대적으로 인식하게 하는 경우가 많다. */
+}
+header nav {
+    background-color: rgb(248, 203, 144);
+    margin:39px 0 0 234px;
+    float:left;
+}
+header nav ul {}
+header nav ul li {
+    float:left;
+}
+header nav ul li a {
+    padding-right:40px;
+    font-size:1.2rem;
+}
+header nav ul li:last-child a {padding-right:0;}/* li 마지막 형제인 외동인 a */
+/* 활성화 페이지 기준 active class 선택자 작성위치 */
+header nav ul .active a {color:#36b4e5}
+header .lnb {
+    background-color: rgb(255, 170, 59);
+    float:right;
+    margin:39px 20px 0 0;
+}
+header .lnb li {
+    float:left;
+    margin-right:20px;
+}
+/* 모든 li에 반복적으로 들어간 margin 또는 padding값에서 마지막 여백 빼는법 */
+header .lnb li:last-child {margin-right:0;}
+header .lnb li a {
+    font-size:1.2rem;
+}
+header .lnb li span {
+    width:1px; height:13px;
+    background-color:#aaa;
+    display:block; margin:3px;
+}
+/* main */
+main {}
+main .breadcrumbs_bg {
+    background-color: #f1f1f1;
+    border:1px solid #aaa;
+    border-left:0; border-right:0;
+}
+main .breadcrumbs_bg .breadcrumbs {
+    background-color:blanchedalmond;
+    width:1200px; height: 58px;
+    margin:0 auto;
+    text-align:right;
+    padding:23px 20px 0 0;
+}
+main .breadcrumbs_bg .breadcrumbs a {}
+main .breadcrumbs_bg .breadcrumbs span {font-weight: 700;}
+main .contents1 {
+    background-color: rgb(147, 255, 255);
+    width:1200px; padding:70px 0;
+    margin:0 auto;
+    text-align:center;
+}
+main .contents1 h1 {
+    font-size:2.074rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin-bottom:40px
+
+}
+main .contents1 p {
+    font-size:1.2rem;
+    letter-spacing: -0.02em;
+}
+main .c2_bg {}
+main .c2_bg .contents2 {
+    background-color: #f1f1f1;
+}
+main .c2_bg .contents2 p {
+    text-align: center;
+    letter-spacing: -0.02em;
+    line-height: 35px;
+    padding:70px 0;
+    font-size: 1.2rem;
+}
+main .contents3 {
+    background-color: rgb(0, 207, 207);
+    width: 1200px;
+    margin:0 auto;
+    text-align: center;
+    padding:70px 0;
+}
+main .contents3 h2 {
+    color:#36b4e5;
+    font-size: 2.074rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+main .contents3 h2+p {
+    font-size:1.728rem;
+    line-height: 45px;
+    letter-spacing: -0.02em;
+}
+main .contents3 p:nth-child(2) {margin-bottom:50px;}
+main .c4_bg {
+    background-color:#f1f1f1;
+}
+main .c4_bg .contents4 {
+    width: 1200px;
+    margin:0 auto;
+    text-align: center;
+}
+main .c4_bg .contents4 h2 {
+    font-size: 2.074rem;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    clear: both;
+}
+main .c4_bg .contents4 ul {
+    display:inline-block;
+}
+main .c4_bg .contents4 ul .box {
+    font-size: 2.074rem;
+    letter-spacing: -0.02em;
+    width: 250px; height: 250px;
+    line-height: 250px;
+    border-radius:50%;
+    float: left;
+}
+main .c4_bg .contents4 ul .a {
+    background-color: #36b4e5;
+}
+main .c4_bg .contents4 ul .b {
+    background-color: #fff;
+}
+main .c4_bg .contents4 ul .c {
+    background-color: #f3c300;
+}
+main .c4_bg .contents4 .contents4_2 {
+    display:inline-block;
+}
+main .c4_bg .contents4 .contents4_2 li {
+    float:left;
+    background-color: #fff;
+    width:180px; height:180px;
+    border-radius:50%;
+    padding-top:58px;
+}
+main .c4_bg .contents4 .contents4_2 li h3 {
+    font-size: 1.2rem;
+    letter-spacing: -0.02em;
+}
+main .c4_bg .contents4 .contents4_2 li p {
+    font-size: 1rem;
+    letter-spacing: -0.02em;
+}
+/* footer */
+footer {
+    width:1200px;
+    margin:0 auto;
+}
+footer .f_top {
+    height: 60px;
+}
+footer .f_top .fnb {
+    background-color: rgb(245, 142, 47);
+    float:left;
+    margin:23px 0 0 20px;
+}
+footer .f_top .fnb li {
+    float:left;
+    padding-right:30px;
+}
+footer .f_top .fnb :last-child {padding-right:0;}
+footer .f_top .fnb li a {}
+footer .f_top .site {
+    float:right;
+    margin:10px 20px 0 0;
+}
+footer .f_top .site li {
+    float:left;
+    border:1px solid #f1f1f1;
+}
+footer .f_top .site li:nth-child(1) {margin-right:10px;}
+footer .f_top .site li a {
+    padding:10px 20px;
+    display:block;
+    font-size: 1.2rem;
+    letter-spacing: -0.02em;
+
+}
+footer .f_btm {
+    background-color: blueviolet;
+    margin:0 auto; padding:70px 0;
+}
+footer .f_btm address {
+    line-height:40px;
+    margin-bottom:50px;
+    font-size: 1.2rem;
+    letter-spacing: -0.02em;
+}
+footer .f_btm p {
+    font-size: 1.2rem;
+    letter-spacing: -0.02em;
+}
