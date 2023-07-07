@@ -1,0 +1,302 @@
+/* popup */
+#top {
+    width: 34px; height: 34px;
+    position: fixed; right:50px; bottom:50px;
+}
+#top img {width:100%;}
+/* all layout - 그룹선택자로 한번에 주기 */
+header,main .visual,main .service,main .bnr_bg .bnr,
+main .board,main .info,main .news,footer {
+    background-color: aqua;
+    width:1152px; margin:0 auto;
+}
+/* header */
+header {}
+/* header-h top */
+header #h_top {
+    background-color: yellow;
+    height: 48px;
+}
+header #h_top .left {
+    background-color: lime;
+    float:left;
+}
+header #h_top .left h1 {
+    float:left;  padding-top:10px;
+    width:110px; height:28px;
+}
+header #h_top .left h1 a {}
+header #h_top .left h1 a img {
+    width:100%; /* 부모크기 따라가기 */
+}
+header #h_top .left nav {
+    float:left;
+}
+header #h_top .left nav ul {}
+header #h_top .left nav ul li {
+    float:left;
+    margin-left:20px;
+}
+header #h_top .left nav ul li a {
+    line-height: 48px;
+    letter-spacing: -0.02em;
+}
+header #h_top .right {
+    background-color: pink;
+    float:right;
+}
+header #h_top .right li {
+    float:left;
+    margin-left:20px;
+}
+header #h_top .right li:nth-child(1) {margin-left:0;}
+header #h_top .right li a {
+    line-height: 48px;
+    letter-spacing: -0.02em;
+}
+/* header-h btm */
+header #h_btm {
+    background-color: gray;
+    height: 119px;
+}
+header #h_btm h1 {
+    background-color: yellow;
+    float:left;
+    width: 150px; height: 28px;
+    margin-top: 45px;
+}
+header #h_btm h1 a {}
+header #h_btm h1 a img {
+    width: 100%;
+}
+header #h_btm #search_frm {
+    background-color: lime;
+    float: left;
+    width: 369px; height: 46px;
+    border:2px solid #1e6cb3;
+    padding:10px 20px 0;
+    margin:36px 0 0 230px;
+}
+header #h_btm #search_frm fieldset {
+    border:0;
+}
+header #h_btm #search_frm fieldset legend {
+    display:none;
+}
+header #h_btm #search_frm fieldset input {
+    float: left;
+    width:calc(100% - 20px);
+}
+header #h_btm #search_frm fieldset input::placeholder {
+    letter-spacing: -0.02em; color: #1e6cb3;
+}
+header #h_btm #search_frm fieldset #search_btn {
+    float:right;
+    border:0; background:none; /* 버튼 선,배경 빼기 */
+    width:20px; height: 20px;
+    cursor:pointer;
+}
+header #h_btm #search_frm fieldset #search_btn img {
+    width: 100%;
+}
+header #h_btm .h_b_right {
+    background-color: yellow;
+    float: right;
+    margin-top: 18px;
+}
+
+header #h_btm .h_b_right #langfrm {
+    text-align:right;
+}
+header #h_btm .h_b_right #langfrm fieldset {
+    border:0;
+}
+header #h_btm .h_b_right #langfrm fieldset legend {
+    display: none;
+}
+header #h_btm .h_b_right #langfrm fieldset select {
+    font-size: 0.833rem;
+    letter-spacing: -0.02em;
+    width: 93px; padding:5px 0;
+    background:none;
+    border:1px solid #1e6cb3;
+}
+header #h_btm .h_b_right #langfrm fieldset select option {
+    font-size: 0.833rem;
+    letter-spacing: -0.02em;
+}
+header #h_btm .h_b_right #langfrm fieldset #lang_btn {
+    width:43px; height:29px;
+    background-color: #1e6cb3;
+    border:0;
+    color:#fff;
+    cursor: pointer;
+}
+header #h_btm .h_b_right .weather {}
+header #h_btm .h_b_right .weather .current_weather {}
+header #h_btm .h_b_right .weather .current_weather em {
+    font-size: 2.074rem;
+    font-weight: 700;
+}
+header #h_btm .h_b_right .weather .current_dust {
+    font-size: 0.833rem;
+}
+/* main */
+main {}
+/* main-1 광고배너 */
+main .visual {
+    background-color: hotpink;
+    overflow:hidden; /* 다른게 파고들어오지 않도록 */
+}
+main .visual .left {
+    background-color: aqua;
+    position: relative;
+    width: 770px; height: 350px;
+    float: left;
+}
+main .visual .left img {
+    width: 100%;
+}
+main .visual .left .close {
+    letter-spacing: -0.02em; font-weight: 500;
+    padding:10px; border-radius: 5px;
+    background-color: #1e6cb3; color: #fff;
+    position: absolute;
+    right:10px; bottom:10px;
+}
+main .visual .right {
+    background-color: yellow;
+    width: 360px; float: right;
+}
+main .visual .right .covid {
+    display: block; /* 블록이어야 크키인식이 되어 글씨이동 가능 */
+    position: relative;
+    width: 360px; height: 230px;
+    margin-bottom:10px;
+}
+main .visual .right .covid span {
+    background-color: aqua;
+    position:absolute;
+}
+main .visual .right .covid .date {top:19px; right:22px;}
+main .visual .right .covid .data {}
+main .visual .right .covid .data1 {top:86px; left:80px}
+main .visual .right .covid .data2 {top:86px; right:87px}
+main .visual .right .covid .data3 {bottom:58px; left:58px;}
+main .visual .right .covid .data4 {bottom:58px; right:162px;}
+main .visual .right .covid .data5 {bottom:58px; right:52px;}
+main .visual .right .covid img {width: 100%;}
+main .visual .right .traffic {}
+main .visual .right .traffic img {}
+/* 주요서비스~새소식 제목 디자인 그룹 */
+/* 정리 후 */
+main section .title {
+    border-bottom: 1px solid #aaa;
+    overflow: hidden;
+    padding:50px 0 15px;
+}
+main section .title h2 {
+    float:left;
+    font-size: 1.44rem;
+}
+main section .title .site {
+    float:right;
+    border:1px solid #aaa;
+    padding:5px 10px;
+}
+main section .title .more {}
+/* 정리 전 */
+/* main .service .title {}
+main .service .title h2 {}
+main .service .title .site {}
+main .board .event .title {}
+main .board .event .title h2 {}
+main .board .event .title .more {}
+main .board .festival .title {}
+main .board .festival .title h2 {}
+main .board .festival .title .more {}
+main .board .service .title {}
+main .board .service .title h2 {}
+main .info title {}
+main .info title h2 {}
+main .news .title {}
+main .news .title h2 {}
+main .news .title .more {} */
+
+/* main-2 주요서비스 */
+main .service {}
+main .service .title {}
+main .service .title h2 {}
+main .service .title .site {}
+main .service .contents {}
+main .service .contents a {}
+main .service .contents a img {}
+main .service .contents a span {}
+/* main-3 배너 */
+main .bnr_bg {}
+main .bnr_bg .bnr {}
+main .bnr_bg .bnr a {}
+main .bnr_bg .bnr a img {}
+/* main-4 게시판 */
+main .board {}
+main .board .event {}
+main .board .event .title {}
+main .board .event .title h2 {}
+main .board .event .title .more {}
+main .board .event .contents {}
+main .board .event .contents a {}
+main .board .event .contents a span {}
+main .board .event .contents a .administrative {}
+main .board .event .contents a .environment {}
+main .board .event .contents a .welfare {}
+main .board .event .contents a .housing {}
+main .board .event .contents a .culture {}
+main .board .festival {}
+main .board .festival .title {}
+main .board .festival .title h2 {}
+main .board .festival .title .more {}
+main .board .festival .contents {}
+main .board .festival .contents a {}
+main .board .festival .contents a span {}
+main .board .festival .contents a .environment {}
+main .board .festival .contents a .economy {}
+main .board .festival .contents a .culture {}
+main .board .service {}
+main .board .service .title {}
+main .board .service .title h2 {}
+main .board .service .content {}
+main .board .service .content a {}
+/* main-5 분야정보 */
+main .info {}
+main .info title {}
+main .info title h2 {}
+main .info .contents {}
+main .info .contents a {}
+main .info .contents a img {}
+main .info .contents a span {}
+/* main-6 새소식 */
+main .news {}
+main .news .title {}
+main .news .title h2 {}
+main .news .title .more {}
+main .news .contents {}
+main .news .contents a {}
+main .news .contents a img {}
+main .news .contents a span {}
+/* footer-f top */
+footer {}
+footer .fnb {}
+footer .fnb .left {}
+footer .fnb .left a {}
+footer .fnb .right {}
+footer .fnb .right a {}
+/* footer-f btm */
+footer .footer_btm {}
+footer .footer_btm .left {}
+footer .footer_btm .left p {}
+footer .footer_btm .left p img {}
+footer .footer_btm .left address {}
+footer .footer_btm .left address a {}
+footer .footer_btm .right {}
+footer .footer_btm .right a {}
+footer .footer_btm .right a img {}
