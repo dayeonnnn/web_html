@@ -1,0 +1,197 @@
+main .banner,main .best, footer .fnb,footer address {
+    width:1300px; margin:0 auto;
+}
+.r_menu {position:fixed; right:0; top:200px;}
+.r_menu a {
+    background-color: #fff;
+    display: block;
+    width: 30px; height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border:1px solid #aaa;
+}
+.r_menu a:nth-child(1) {
+    background-color: #ff7f50;
+}
+.r_menu a:nth-child(2) {padding-top: 4px;}
+.r_menu a:nth-child(3) {padding-top: 4px;}
+.r_menu a img {}
+header {}
+header .h_top_bg {
+    background-color: #ccc;
+    height: 36px;
+    text-align: center;
+}
+header .h_top_bg a {
+    line-height: 36px;
+    font-size: 0.833rem; font-weight: 700;
+}
+header .h_btm {
+    height: 110px;
+    position: relative;
+}
+header .h_btm h1 {
+    text-align: center;
+    padding-top:45px;
+}
+header .h_btm h1 a {
+    width: 130px; height:19px;
+}
+header .h_btm h1 a img {}
+header .h_btm .gnb_sub {
+    position: absolute;
+    right: 20px; top:47px;
+}
+header .h_btm .gnb_sub .gnb_sub_l {
+    margin-top:5px;
+    display: inline-block;
+    float:left;
+}
+header .h_btm .gnb_sub .gnb_sub_l a {
+    margin-left:20px;
+}
+header .h_btm .gnb_sub .gnb_sub_l a:nth-child(1) {margin-left:0;}
+header .h_btm .gnb_sub .gnb_sub_l a img {}
+header .h_btm .gnb_sub .gnb_sub_l .join {
+    position: relative;
+}
+header .h_btm .gnb_sub .gnb_sub_l .join span {
+    border:1px solid #ff7f50;
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+    left:-35px; top:25px;
+    font-size: 0.833rem;
+    padding:5px 10px;
+    width: 100px;
+    text-align: center;
+}
+header .h_btm .gnb_sub .gnb_sub_m {
+    float:left;
+    margin-left:30px;
+}
+header .h_btm .gnb_sub .gnb_sub_m a {
+    width: 16px; height: 16px;
+    margin-left:20px;
+}
+header .h_btm .gnb_sub .gnb_sub_m a img {}
+header .h_btm .gnb_sub .all {
+    float:left;
+    margin-left:30px;
+    width: 20px;
+}
+header .h_btm .gnb_sub .all img {
+    width: 100%;
+}
+header nav {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+header nav a {
+    margin:0 15px;
+}
+/* main */
+main {}
+main .main_bnr {}
+main .main_bnr img {width: 100%;}
+main .banner {
+    padding: 82px 0;
+}
+main .banner a {
+    display: inline-block;
+    width: 416px;
+    margin-right: 23px;
+}
+main .banner a:nth-child(3) {margin-right: 0;}
+main .banner a img {
+    width: 100%;
+}
+main h1 {
+    text-align: center;
+    padding-bottom: 106px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+main .best {
+}
+main .best li {
+    width:425px;
+    display: inline-block;
+    margin-right: 8px;
+}
+main .best li:nth-child(3n) {margin-right: 0;}
+main .best li a {}
+main .best li a img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+main .best li h2 {font-size: 1rem;}
+main .best li  > p {
+    padding: 10px 0 30px;
+    border-bottom: 1px solid #aaa;
+}
+main .best li p em {
+    font-size: 1rem;
+    font-weight: 700;
+}
+main .best li .size {
+    margin:10px 0;
+}
+main .best li .size p {
+    display: inline;
+    /* float: left; 여기에 왜 안들어가는지 물어보기 */
+}
+main .best li .size p span {
+    display: inline-block;
+    float:right;
+    color:#ff7f50
+}
+main .best li .b_btm {
+    margin-bottom: 67px;
+}
+main .best li .b_btm span {
+    display: inline-block;
+    padding:3px 5px;
+    margin-right: 5px;
+    color:#fff
+}
+main .best li .b_btm span:nth-child(1) {background-color: #ffe4c4;}
+main .best li .b_btm span:nth-child(2) {background-color: #000080;}
+main .btm_bg {
+    background-image: url(../images/made_img.jpg);
+    text-align:center; background-position:center;
+    padding:100px 0;
+}
+main .btm_bg .btm_bnr_b {}
+main .btm_bg .btm_bnr_b h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color:#fff;
+
+}
+main .btm_bg .btm_bnr_b h3 p {}
+main .btm_bg .btm_bnr_b p a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border:1px solid #fff;
+    color: #fff;
+}
+/* footer */
+footer {
+    margin-top: 100px;
+    border-top: 1px solid #aaa;
+    height: 190px;
+}
+footer .fnb {
+    padding:50px 0 20px;
+}
+footer .fnb a {
+    color:#aaa;
+    margin-right: 30px;
+}
+footer .fnb a:nth-child(2) {color:#555;}
+footer address {
+    line-height: 16px;
+}
