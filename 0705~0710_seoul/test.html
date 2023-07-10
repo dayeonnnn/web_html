@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        html,body {
+            background:aqua url(./images/news_img08.jpg) no-repeat fixed center bottom;
+            background-size: 700px;
+            height: 200%;
+        }
+        #bg {
+            background-color:rgba(255,255,255,0.8); 
+            position: relative;
+        }
+        #bg p {
+            background: yellow url(./images/news_img02.jpg) no-repeat ;
+            width:400px; height: 200px;
+            border:5px solid #000;
+        }
+        #bg p:nth-child(2) {
+            border-color: red; 
+            position: relative; left:100px;
+        }
+        #bg p:nth-child(3) {
+            background-repeat:repeat-x; position: absolute; bottom:0; right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="bg">
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <h1>Vs code Emmet</h1>
+    <!-- p>em --> <p><em>부모자식</em></p>
+    <!-- p>span*2 --><p><span>1</span><span>2</span></p>
+    <p>동일 관계(형제)의 요소를 2개이상 제작하고 싶을 땐 곱하기를 붙여서 Emmet기능을 실행한다.</p>
+    <ul><!-- ul>li*4>a -->
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+    </ul>
+    <div><!-- div>p*5 -->
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <header><!-- header>h1+nav+p -->
+        <h1></h1>
+        <nav></nav>
+        <p></p>
+    </header>
+    <div class="test"><!-- div.test>p>em -->
+        <p><em></em></p>
+    </div>
+    <div id="box"><!-- div#box>section.contents>h1+p -->
+        <section class="contents">
+            <h1></h1>
+            <p></p>
+        </section>
+    </div>
+    
+    <img src="./images/banner_01.jpg" alt="서울시청">
+    <video src="#"></video>
+    <form action="#" method="post"></form><!-- form:get.post -->
+    <input type="text">
+    <button type="submit"></button><!-- button:submit -->
+    <laberl><input type="checkbox" name="그룹이름" id=""></laberl><!-- label>input:checkbox -->
+    <table><!--     table>thead>tr>th*2 -->
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead><!-- tbody>tr>td*2 -->
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="right"><!-- div.right>form:get#langfrm>fieldset>legend+select+buttopn -->
+        <form action="" method="get" id="langfrm">
+            <fieldset>
+                <legend></legend>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <buttopn></buttopn>
+            </fieldset>
+        </form>
+    </div>
+    <div class="weather"><!-- div.weather>p.current_weather+p.dust -->
+        <p class="current_weather"></p>
+        <p class="dust"></p>
+    </div>
+</body>
+</html>
