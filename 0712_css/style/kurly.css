@@ -1,0 +1,116 @@
+/* rgb(95 3 128)*/
+/* 1050px */
+/* all layout */
+.top_bnr_bg .top_bnr, header {
+    margin: 0 auto; width: 1050px;
+}
+/* header-sprite 그룹선택자 */
+header .middle .logo h1, header .middle #search_frm fieldset #search_btn,
+header .middle .lnb a,header .menu_btm .all_nav .menu {
+    background: skyblue url(../images/kurly_img/icon_set.png) no-repeat;
+    width:36px; height: 36px;
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+/*  */
+.top_bnr_bg {
+    background-color: rgb(95 3 128);
+}
+.top_bnr_bg .top_bnr {
+    height: 42px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.top_bnr_bg .top_bnr .adver {
+    padding: 0 100px;
+    color:#fff;
+}
+.top_bnr_bg .top_bnr .adver em {font-weight: 700;}
+.top_bnr_bg .top_bnr .close {
+    position: absolute;
+    right:0;
+    color:#fff;
+}
+.top_bnr_bg .top_bnr .close .fa-xmark {}
+header {}
+header .user_lnb {
+    background-color: pink;
+    height: 35px;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .user_lnb .join {}
+header .user_lnb .login {}
+header .user_lnb .customer_service {}
+header .middle {
+    background-color: lime;
+    height: 63px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .middle .logo {
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+}
+header .middle .logo h1 {
+    width: 82px; height: 42px;
+    background-position: 0 -158px;
+}
+header .middle .logo .market {}
+header .middle .logo .beauty {}
+header .middle #search_frm {
+    border:1px solid rgb(95,3,128);
+    border-radius: 5px;
+    width: 400px;
+    padding: 5px 10px;
+}
+header .middle #search_frm fieldset {
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+header .middle #search_frm fieldset #search_txt {
+    width: 300px;
+}
+header .middle #search_frm fieldset #search_btn {background-position: 0 -122px;}
+header .middle .lnb {}
+header .middle .lnb a {}
+header .middle .lnb .map {
+    background-position: 0 -86px;
+}
+header .middle .lnb .like {
+    background-position: 0 -50px;
+}
+header .middle .lnb .cart {
+    background-position: 0 -14px;
+}
+header .menu_btm {
+    background-color: aqua;
+    height: 56px;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .menu_btm .all_nav {}
+header .menu_btm .all_nav .menu {
+    width: 16px; height: 14px;
+}
+header .menu_btm .all_nav span {}
+header .menu_btm nav {}
+header .menu_btm nav a {}
+header .menu_btm .delivery_info {}
+header .menu_btm .delivery_info em {}
+header .menu_btm .delivery_info em .fa-circle {
+    font-size: 0.1px;
+}
+header .menu_btm .delivery_info span {}
