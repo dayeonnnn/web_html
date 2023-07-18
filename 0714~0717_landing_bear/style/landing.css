@@ -1,0 +1,281 @@
+/* 1. title */
+.title_bg {
+    background:url(../images/bg1.png) no-repeat fixed center 60%;/* 고정 x축 y축 */
+    background-size: cover; /* 사용자가 보고있는 해상도에 따라 변경/축소해도 고정 */
+    position: relative;
+}
+.title_bg::after {/* 이미지와 색을 같이 넣으면 이미지가 보이니 추가로 색상넣기 */
+    content:'';/* 필수속성이지만 내용이 안들어가니 비어두기 */
+    display: block; height: 800px; width:100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(0,0,0,0.7) 100%);
+    position: absolute; top:0; left:0; z-index: 90; /* absolute 적용 시 기본 block w100% inline처럼 변함 */
+}
+.title_bg .title {
+    width:1200px; height: 800px; margin:0 auto;
+    display:flex; flex-flow:column nowrap;
+    align-items:center;
+    z-index:100; position: relative;
+    /* 아래있는걸 올리고 싶을 때 -1~999까지 숫자쓰고 포지션 넣기 */
+}
+.title_bg .title .logo {
+    align-self:flex-start;
+}
+.title_bg .title .logo img {}
+.title_bg .title h1 {
+    padding:122px 0 39px;
+    color:#fff;
+    font-size: 3.157rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 70px;
+}
+.title_bg .title h1 em {
+    font-size: 3.157rem;
+    font-weight: 700;
+}
+.title_bg .title .sponsor_btn {
+    background: rgb(255,147,0);
+    background: linear-gradient(83deg, rgba(255,147,0,1) 0%, rgba(255,114,0,1) 100%);
+    padding:30px 70px;
+    border-radius: 50px;
+}
+.title_bg .title .sponsor_btn span {
+    font-size: 1.777rem;
+    color:#fff;
+    letter-spacing: -0.04em;
+}
+.title_bg .title .sponsor_btn img {}
+.title_bg .title .sponsor_qa {
+    margin-top: 21px;
+    align-self:flex-end;
+    background-color: #222;
+    padding:20px 15px;
+    border-radius: 30px;
+}
+.title_bg .title .sponsor_qa span {
+    font-size: 1.333rem;
+    color:#fff;
+    letter-spacing: -0.04em;
+    padding: 0 10px;
+}
+.title_bg .title .sponsor_qa img {}
+.title_bg #snow {
+    position: absolute; top:0; left:0;
+    height: 800px; width: 100%;
+    z-index:200; 
+}
+/* 2.quiz */
+.quiz_bg {
+    background: url(../images/quiz_bg.png) no-repeat center;
+    background-size: cover;
+}
+.quiz_bg .quiz {
+    width: 1200px; margin:0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    align-items: center;
+    padding:100px 0;
+}
+.quiz_bg .quiz .left {
+    width: 488px; height: 400px;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: space-between;
+}
+.quiz_bg .quiz .left h2 {
+    font-size:3.157rem;
+    color:#fff;
+    font-weight:700;
+    text-align: center;
+}
+.quiz_bg .quiz .left h3 {
+    font-size:1.333rem;
+    color:#fff;
+    font-weight:500;
+}
+.quiz_bg .quiz .left #quiz_frm {}
+.quiz_bg .quiz .left #quiz_frm fieldset {}
+.quiz_bg .quiz .left #quiz_frm fieldset ul {}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li {margin-bottom: 25px;}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label {
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label input {
+    appearance:none;/* form input 요소 숨기기 */
+}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label span {
+    background:url(../images/quiz_un_check.png) no-repeat;
+    padding-left: 34px;
+    font-size: 1.333rem;
+    color:#fff;
+}
+/* 상태 선책자 (radio check될 경우 span의 이미지 변경하기 */
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label input:checked+span {
+    background:url(../images/quiz_check.png) no-repeat;
+}
+.quiz_bg .quiz .left #quiz_frm fieldset #answer_btn {
+    background: #222;
+    color:#fff;
+    width:488px;
+    padding:20px 0;
+    border-radius:40px;
+    font-size: 1.333rem;
+}
+.quiz_bg .quiz .right {
+    width: 550px;
+    text-align: center;
+}
+.quiz_bg .quiz .right h2 {
+    background: #FF7200;
+    padding: 20px 0;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.quiz_bg .quiz .right h2 img {}
+.quiz_bg .quiz .right h2 span {
+    font-weight: 700;
+    font-size: 1.333rem;
+    color:#fff;
+}
+.quiz_bg .quiz .right .contents {
+    background: #fff;
+    padding:70px 0;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color:#FF7200;
+}
+.quiz_bg .quiz .right .contents em {
+    font-size: 5rem;
+    font-weight: 700;
+}
+.quiz_bg .quiz .right .contents span {
+    font-size:3.157rem;
+    font-weight: 700;
+}
+.quiz_bg .quiz .right p:last-child {
+    color:#fff;
+}
+.quiz_bg .quiz .right .contents span:last-child {color:#000;}
+/* 3. youtube */
+.video_bg {
+    padding: 100px 0;
+    background: url(../images/video_bg.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+.video_bg h2 {
+    text-align: center;
+    font-size: 3.157em;
+    font-weight: 700;
+    line-height: 90px;
+}
+.video_bg iframe {
+    width: 800px; height: 500px;
+    margin: 50px 0;
+}
+.video_bg .sponsor_btn {
+    background: rgb(255,147,0);
+    background: linear-gradient(83deg, rgba(255,147,0,1) 0%, rgba(255,114,0,1) 100%);
+    padding: 30px 70px;
+    border-radius: 50px;
+}
+.video_bg .sponsor_btn span {
+    font-size: 1.777rem;
+    text-align: center;
+    font-weight: 500;
+    color:#fff;
+}
+.video_bg .sponsor_btn img {}
+/* <!-- 4.50%감소 --> */
+.bg50 {
+    background: url(../images/50_bg.png) no-repeat center;
+    background-size: cover;
+}
+.bg50 .wrap50 {
+    padding: 100px 0;
+    width: 1200px; margin: 0 auto;
+}
+.bg50 .wrap50 h2 {
+    color: #fff;
+    font-size: 3.157rem;
+    font-weight: 700;
+    line-height: 90px;
+}
+.bg50 .wrap50 h2 span {
+    font-size: 3.157rem;
+    background-color: #fff;
+    color: #222;
+    font-weight: 700;
+}
+.bg50 .wrap50 .contents {
+    font-size: 1.777rem;
+    line-height:55px;
+    color:#fff;
+    margin: 50px 0;
+}
+.bg50 .wrap50 p img {
+    height: 600px;
+}
+/* <!-- 5.28조/27cm/332만명 --> */
+.warming_bg {
+    background: #F1F1F1;
+}
+.warming_bg .warming {
+    width: 1200px;
+    margin: 0 auto;
+    padding:100px 0;
+    text-align: center;
+}
+.warming_bg .warming h2 {
+    font-size: 3.157rem;
+    font-weight: 700;
+}
+.warming_bg .warming .contents {
+    font-size: 1.777rem;
+    font-weight: 500px;
+    line-height: 55px;
+    padding: 100px 0;
+}
+.warming_bg .warming ul {
+    display: flex;
+    flex-flow:row nowrap;
+}
+.warming_bg .warming ul li {
+    width: calc(33.33% - 40px / 3); /* 100%/3 - 마진값 / 갯수 */
+    margin-right: 20px;
+}
+.warming_bg .warming ul li:last-child {margin-right: 0;}
+.warming_bg .warming ul li .top {
+    height: 300px;
+    background-position: center 70%;
+    background-size: cover;
+}
+.warming_bg .warming ul li:nth-child(1) .top {background-image: url(../images/28.png);}
+.warming_bg .warming ul li:nth-child(2) .top {background-image: url(../images/27.png);}
+.warming_bg .warming ul li:nth-child(3) .top {background-image: url(../images/28.png);}
+.warming_bg .warming ul li .top h3 {
+    font-size: 3.157rem;
+    color:#fff;
+    font-weight: 700;
+    padding: 30px 0;
+}
+.warming_bg .warming ul li .top p {
+    font-size: 1.333rem;
+    color:#fff;
+}
+.warming_bg .warming ul li .list_contents {
+    line-height: 30px;
+    padding: 30px 23.5px;
+    background-color: #fff;
+    height: 195px;
+}
