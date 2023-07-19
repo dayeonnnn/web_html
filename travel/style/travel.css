@@ -1,0 +1,221 @@
+main {
+    background: url(../image/bg_03.png) no-repeat center -600px;
+    background-size: cover;
+}
+main .main_bg {}
+main .main_bg h1 {
+    text-align: center;
+    padding-top: 150px;
+}
+main .main_bg h1 img {
+    width: 1200px;
+}
+main .cal {
+    width: 1200px;
+    margin: 0 auto;
+    padding:200px 0;
+}
+main .cal h2 {
+    color:#fff;
+    font-size: 3.157rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+}
+main .cal .sub {
+    color:#fff;
+    font-size:1.777rem ;
+    text-align: center;
+    margin-bottom: 50px;
+}
+main .cal p {}
+main .cal .img img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+main .cal p span {
+    color: #fff;
+}
+/* 선택 */
+main form {
+    margin: 0 auto;
+    width: 1008px;
+    border:5px solid #00D1FF;
+}
+main form fieldset {
+}
+main form fieldset ul {
+    display: flex;
+    flex-flow: row nowrap;
+}
+main form fieldset ul li {}
+main form fieldset ul li:first-child {
+    width: 277px; height: 64px;
+    background-color:#fff;
+}
+main form fieldset ul li input {
+    font-size: 1.333rem;
+    padding-left: 30px;
+    width: 240px;/* 검색창 길이 */
+    line-height: 64px;
+}
+main form fieldset ul li #search_btn {
+    border:0; background:none;
+    width: 24px; height: 24px;
+}
+main form fieldset ul li #country {
+    font-size: 1.333rem;
+    padding:0 10px;
+    border:0;
+    width: 164px; height: 64px;
+    
+}
+main form fieldset ul li #country option {}
+main form fieldset ul li #start_date {
+    font-size: 1.333rem;
+    padding:0 10px;
+    border:0;
+    width: 188px; height: 64px;
+}
+main form fieldset ul li #start_date option {}
+main form fieldset ul li #end_date {
+    font-size: 1.333rem;
+    padding:0 10px;
+    border:0;
+    width: 188px; height: 64px;
+}
+main form fieldset ul li #end_date option {}
+main form fieldset ul li button {
+    width: 183px; height: 64px;
+    background-color: #FE6162;
+    color:#FFF62C;
+    font-size: 1.333rem;
+    font-weight: 700;
+}
+/* 여행지추천 */
+main .free {
+    margin: 150px 0;
+    text-align: center;
+}
+main .free .title {
+    color:#696054;
+    font-size: 1.777rem;
+    font-weight: 700;
+    margin-bottom: 63px;
+}
+main .free p {}
+main .free h2 {
+    font-family: jalnan;
+    font-size: 3.157rem;
+}
+main .free h2 span {
+    font-family: nanumpen;
+    font-size: 7.5rem;
+    color: #FE6162;
+}
+main .free .recommendation {}
+main .free .recommendation .phuket {}
+main .free .recommendation .phuket .phuket_top {
+    width: 1200px; height: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 40px;
+    display: flex;
+    flex-flow:row nowrap;
+}
+main .free .recommendation .phuket .phuket_top .top_left {}
+main .free .recommendation .phuket .phuket_top .top_left p {}
+main .free .recommendation .phuket .phuket_top .top_left p img {}
+/* 묶음태그 */
+.top_right {
+    margin-left: 50px;
+    text-align: start;
+}
+.top_right h3 {
+    font-size:2.369em;
+    font-weight: 700;
+}
+main .free .recommendation .phuket .phuket_top .top_right  {}
+main .free .recommendation .phuket .phuket_top .top_right h3 {}
+main .free .recommendation .phuket .phuket_top .top_right .price {}
+main .free .recommendation .phuket .phuket_top .top_right .price p {}
+main .free .recommendation .phuket .phuket_top .top_right .price p em {}
+main .free .recommendation .phuket .phuket_top .top_right .price p span {}
+main .free .recommendation .phuket .phuket_btm {}
+main .free .recommendation .phuket .phuket_btm ul {}
+main .free .recommendation .phuket .phuket_btm ul li {}
+main .free .recommendation .phuket .phuket_btm ul li p {}
+main .free .recommendation .phuket .phuket_btm ul li p img {}
+main .free .recommendation .phuket a {}
+main .free .recommendation .japan {}
+main .free .recommendation .japan .japan_top {}
+main .free .recommendation .japan .japan_top .top_left {}
+main .free .recommendation .japan .japan_top .top_left p {}
+main .free .recommendation .japan .japan_top .top_left p img {}
+main .free .recommendation .japan .japan_top .top_right {}
+main .free .recommendation .japan .japan_top .top_right h3 {}
+main .free .recommendation .japan .japan_top .top_right .price {}
+main .free .recommendation .japan .japan_top .top_right .price p {}
+main .free .recommendation .japan .japan_top .top_right .price p em {}
+main .free .recommendation .japan .japan_top .top_right .price p span {}
+main .free .recommendation .japan .japan_btm {}
+main .free .recommendation .japan .japan_btm ul {}
+main .free .recommendation .japan .japan_btm ul li {}
+main .free .recommendation .japan .japan_btm ul li p {}
+main .free .recommendation .japan .japan_btm ul li p img {}
+main .free .recommendation .japan a {}
+main .free .recommendation .greece {}
+main .free .recommendation .greece .greece_top {}
+main .free .recommendation .greece .greece_top .top_left {}
+main .free .recommendation .greece .greece_top .top_left p {}
+main .free .recommendation .greece .greece_top .top_left p img {}
+main .free .recommendation .greece .greece_top .top_right {}
+main .free .recommendation .greece .greece_top .top_right h3 {}
+main .free .recommendation .greece .greece_top .top_right .price {}
+main .free .recommendation .greece .greece_top .top_right .price p {}
+main .free .recommendation .greece .greece_top .top_right .price p em {}
+main .free .recommendation .greece .greece_top .top_right .price p span {}
+main .free .recommendation .greece .greece_btm {}
+main .free .recommendation .greece .greece_btm ul {}
+main .free .recommendation .greece .greece_btm ul li {}
+main .free .recommendation .greece .greece_btm ul li p {}
+main .free .recommendation .greece .greece_btm ul li p img {}
+main .free .recommendation .greece a {}
+/* 웰컴 */
+main .welcome {}
+main .welcome h2 {}
+main .welcome p {}
+main .welcome .point {}
+main .welcome .point img {}
+main .welcome .point_go {}
+/* 프로모션 */
+main .promotiom {}
+main .promotiom h2 {}
+main .promotiom p {}
+main .promotiom h2 .contents {}
+main .promotiom h2 .contents .content1 {}
+main .promotiom h2 .contents .content1 img {}
+main .promotiom h2 .contents .content1 h3 {}
+main .promotiom h2 .contents .content1 h3 p {}
+main .promotiom h2 .contents .content2 {}
+main .promotiom h2 .contents .content2 img {}
+main .promotiom h2 .contents .content2 h3 {}
+main .promotiom h2 .contents .content2 h3 p {}
+main .promotiom h2 .contents .content3 {}
+main .promotiom h2 .contents .content3 img {}
+main .promotiom h2 .contents .content3 h3 {}
+main .promotiom h2 .contents .content3 h3 p {}
+main .promotiom h2 .contents .content4 {}
+main .promotiom h2 .contents .content4 img {}
+main .promotiom h2 .contents .content4 h3 {}
+main .promotiom h2 .contents .content4 h3 p {}
+main .promotiom .more {}
+/* footer */
+footer {}
+footer .kakao {}
+footer .kakao img {}
+footer .kakao .kakao_btn {}
+footer .time {}
+footer .time p {}
+footer .site {}
