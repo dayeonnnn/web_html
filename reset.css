@@ -11,8 +11,8 @@ form,fieldset,legend,input,select,option,button,label,textarea {
     font-size:16px; font-style:normal; font-weight:normal;
     text-decoration:none;
 }
-th {text-ailgn:left;}
-table,tr,th,td {border-collase:collase;}
+th {text-align:left;}
+table,tr,th,td {border-collapse:collapse;}
 ul,ol,li {list-style:none;} /*목록 태그*/
 a {color:#000;} 
 input {outline:none; border:0;}
